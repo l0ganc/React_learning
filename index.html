@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div id="root"></div>
+<div id="myDiv"></div>
+<script type="text/babel">
+    // ES6 / React / JSX code from here
+    // const textRed = { color: 'red' };
+    // const element = <div>asafsdfsg</div>;
+
+    function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
+    }
+    ReactDOM.render(<Welcome name="logan" />, document.getElementById('myDiv'));
+</script>
+</body>
+</html>
